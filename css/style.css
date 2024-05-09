@@ -1,0 +1,387 @@
+:root {
+  --var-text-secondary: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  backdrop-filter: blur(10px);
+}
+/* navbar */
+.mynav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  right: 0;
+  /* position: fixed; */
+  padding: 1rem;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.199);
+  backdrop-filter: blur(10px);
+}
+
+.mynav .navlogo img {
+  width: 70px;
+}
+
+.mynav table {
+  width: 31%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+table tr td {
+  text-align: center;
+  cursor: pointer;
+}
+td {
+  padding: 9px;
+  border-right: 1px solid rgb(82, 79, 79);
+  font-size: 1.12rem;
+}
+.mynav table td:hover {
+  background-color: rgba(192, 192, 192, 0.445);
+}
+
+.mynav table td a {
+  color: black;
+}
+.mynav table td a:visited {
+  color: black;
+}
+.mynav table td a {
+  text-decoration: none;
+}
+
+.notborder {
+  border-right: 0 !important;
+}
+/* navbar end */
+.contact {
+  /* width: 300%; */
+}
+.utama {
+  background-image: url(../img/background.jpg);
+  background-position: top center;
+}
+.hero {
+  min-height: 270vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.bg {
+  backdrop-filter: blur(15px);
+}
+.hero p {
+  color: var(--var-text-secondary);
+  margin-bottom: 2rem;
+}
+.detail {
+  width: 100%;
+}
+.content .detail .detail__profile {
+  display: flex;
+  align-items: center;
+}
+.content .detail .detail__profile i {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  color: var(--var-text-secondary);
+  font-size: 3rem;
+}
+.detail .pic img {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  margin-top: -268px;
+  /* display: none; */
+}
+.detail .pic .panahkanan {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.61);
+  background-color: rgba(0, 0, 0, 0.158);
+  font-size: 3rem;
+  margin-left: 350px;
+  cursor: pointer;
+}
+.detail .pic .panahkanan:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.detail .pic .panahkiri {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.61);
+  background-color: rgba(0, 0, 0, 0.158);
+  font-size: 3rem;
+  cursor: pointer;
+}
+.detail .pic .panahkiri:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.detail .pic .picc[data-show='hidden'] {
+  z-index: -1;
+}
+/* .detail .pic p {
+  margin-top: 300px;
+} */
+.detail .pic .detail__profile .det {
+  justify-content: center;
+  align-items: center;
+}
+.detail .pic .detail__profile .det p {
+  padding: 0.3rem;
+  margin: 0;
+}
+.det .namauser {
+  color: black;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.hero .content h1 {
+  color: rgb(5, 8, 12);
+  font-size: 3rem;
+  /* margin-top: 5rem; */
+  justify-content: center;
+  text-align: center;
+}
+.hero .content .header p {
+  color: var(--var-text-secondary);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 300;
+}
+
+.hero .content .detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.content .myform {
+  margin: auto;
+  /* background: rgba(0, 0, 0, 0.308);
+  border: 1px solid black; */
+  max-width: 360px;
+  padding: 65px;
+}
+.detail .myform form {
+  margin-top: 4rem;
+}
+.detail .myform .contact {
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+}
+.detail .myform p {
+  text-align: left;
+  width: 240px;
+}
+.detail .myform label {
+  padding: 0.2rem;
+  font-weight: bold;
+}
+input[type='text'],
+[type='email'],
+select,
+button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail .myform button {
+  margin-top: 1rem;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.benefit {
+  display: flex;
+  max-width: 360px;
+  flex-direction: column;
+}
+.benefit .awal {
+  display: flex;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.benefit ol {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+ol li {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+.benefit ol li p {
+  color: rgb(0, 0, 0);
+}
+
+/* our package */
+
+.paket .detpaket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detpaket .judul {
+  border: 1px solid white;
+  padding: 0 10rem;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}
+.judul h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 28px;
+  color: white;
+}
+
+.paket .itempaket {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 15rem 0 15rem;
+  gap: 1rem;
+}
+
+.paket .itempaket .paketcard h1 {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.paket .itempaket .paketcard p {
+  width: 200px;
+  color: white;
+}
+.paketcard {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.paketcard i {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.2rem;
+  color: white;
+}
+
+.foter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+}
+
+.foter .judulfindus {
+  border: 1px solid white;
+  padding: 0 10rem;
+}
+
+.judulfindus h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 28px;
+  color: white;
+}
+
+.kaki {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(255, 241, 241);
+  gap: 2rem;
+  height: 220px;
+}
+.kaki .warna {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.664);
+}
+.kaki .det__kaki {
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+.kaki .det__kaki i {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.det__kaki .textdetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.kaki a {
+  text-decoration: none;
+  color: black;
+}
+.kaki a:visited {
+  color: black;
+}
+
+@media (max-width: 890px) {
+  .hero .content .detail {
+    display: block;
+  }
+  .paket .itempaket {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-content: center;
+  }
+  .paketcard {
+    margin-bottom: 1.5rem;
+  }
+  .mynav table {
+    width: 40%;
+  }
+  .mynav table td a {
+    font-size: 15px;
+  }
+  .benefit ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .detail {
+    margin-top: 268px;
+  }
+  .detail .pic img {
+    width: 380px;
+  }
+  .detail .pic .panahkanan {
+    margin-left: 330px;
+  }
+  .detail .myform {
+    margin-top: 280px;
+  }
+}
